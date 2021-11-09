@@ -1,11 +1,11 @@
-import './App.css';
-import MyBtn from './components/MyBtn';
+import BlogPage from './pages/blog/BlogPage';
+import './styles/App.css';
 
 function App() {
   return (
     <div>
       <h2>App</h2>
-      <MyBtn></MyBtn>
+      <BlogPage />
     </div>
   );
 }

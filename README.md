@@ -1,4 +1,3 @@
-# Second react app
+# CRA starter
 
-1. Loops
-2. Conditionals
+1.

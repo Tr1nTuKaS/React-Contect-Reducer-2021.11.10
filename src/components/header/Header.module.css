@@ -1,3 +1,11 @@
+.header {
+  position: fixed;
+  top: 0.8rem;
+  left: 0.8rem;
+  width: calc(100% - 1.6rem);
+  border: 1px solid #000;
+}
+
 .header > div {
   margin: 1rem 5%;
   background-color: snow;

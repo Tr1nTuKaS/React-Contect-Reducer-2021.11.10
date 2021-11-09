@@ -34,3 +34,5 @@
 5. create state for single blog data state
 
 6. fill page details with blog data
+
+7. daugiau uzduociu naudingos medziagos React_9 puslapyje Teams

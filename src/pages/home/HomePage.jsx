@@ -1,7 +1,9 @@
+import HeroSecion from '../../sections/hero/HeroSection';
+
 function HomePage() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <HeroSecion />
     </main>
   );
 }

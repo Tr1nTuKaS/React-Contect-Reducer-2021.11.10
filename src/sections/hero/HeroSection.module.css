@@ -1,0 +1,23 @@
+.section {
+  height: 100vh;
+  border: 1px solid #000;
+  margin-bottom: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  font-size: 2.5rem;
+}
+
+.ctrl {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}

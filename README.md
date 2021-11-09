@@ -21,3 +21,10 @@
 
 1. React router
 2. npm i react-router-dom@^5
+
+### uzduotys praktikai
+
+1. Prideti texta, nuotraukos pavadinima, santrauka, sukurimo data Posts.json
+2. Prideti stiliu Blog sekcijai, nuotrauka, santrauka ir t.t
+3. Atvaizduoti Single blog page pvz (https://next-blog-wordpress.vercel.app/posts/learn-how-to-pre-render-pages-using-static-generation-with-next-js)
+4.

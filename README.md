@@ -27,4 +27,10 @@
 1. Prideti texta, nuotraukos pavadinima, santrauka, sukurimo data Posts.json
 2. Prideti stiliu Blog sekcijai, nuotrauka, santrauka ir t.t
 3. Atvaizduoti Single blog page pvz (https://next-blog-wordpress.vercel.app/posts/learn-how-to-pre-render-pages-using-static-generation-with-next-js)
-4.
+4. Single blog page gaunam id to post ant kurio paspaudem teidami i single blog page
+   // get blog id from params
+   // https://v5.reactrouter.com/web/guides/quick-start
+
+5. create state for single blog data state
+
+6. fill page details with blog data

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import BlogItem from '../../components/blog-item/BlogItem';
 
 const blogDataArr = [
@@ -7,7 +8,20 @@ const blogDataArr = [
 ];
 
 function BlogsSection() {
-  console.log(JSON.stringify(blogDataArr));
+  // console.log(JSON.stringify(blogDataArr));
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+  async function getPosts() {
+    const resp = await fetch('/db/posts.json');
+    const data = await resp.json();
+    console.log(data);
+    setPosts(data);
+  }
+
   return (
     <section className='container'>
       <h2>Our blogs</h2>
@@ -18,9 +32,9 @@ function BlogsSection() {
         laborum. Magni mollitia laudantium vel tempore.
       </p>
       <div>
-        <BlogItem />
-        <BlogItem />
-        <BlogItem />
+        {posts.map((postObj) => (
+          <BlogItem key={postObj.id} />
+        ))}
       </div>
     </section>
   );

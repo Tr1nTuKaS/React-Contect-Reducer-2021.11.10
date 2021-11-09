@@ -18,3 +18,4 @@
 ### Setup
 
 1. React router
+2. npm i react-router-dom@^5

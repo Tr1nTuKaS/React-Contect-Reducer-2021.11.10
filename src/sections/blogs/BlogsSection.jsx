@@ -33,7 +33,7 @@ function BlogsSection() {
       </p>
       <div>
         {posts.map((postObj) => (
-          <BlogItem key={postObj.id} />
+          <BlogItem key={postObj.id} item={postObj} />
         ))}
       </div>
     </section>

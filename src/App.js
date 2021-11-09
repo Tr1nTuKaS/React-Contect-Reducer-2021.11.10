@@ -6,12 +6,16 @@ import AboutPage from './pages/about/AboutPage';
 import ContactPage from './pages/contact/ContactPage';
 import HomePage from './pages/home/HomePage';
 import Header from './components/header/Header';
+import SingleBlogPage from './pages/single-blog/SingleBlogPage';
 
 function App() {
   return (
     <div className='App'>
       <Header />
       <Switch>
+        <Route path='/blog/:blogId'>
+          <SingleBlogPage />
+        </Route>
         <Route path='/blog'>
           <BlogPage />
         </Route>

@@ -1,14 +1,16 @@
-import './styles/App.css';
+import './styles/global.css';
 
 import { Switch, Route } from 'react-router-dom';
 import BlogPage from './pages/blog/BlogPage';
 import AboutPage from './pages/about/AboutPage';
 import ContactPage from './pages/contact/ContactPage';
 import HomePage from './pages/home/HomePage';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
+      <Header />
       <Switch>
         <Route path='/blog'>
           <BlogPage />

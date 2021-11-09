@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  font-family: 'Open Sans', Helvetica;
+}
+
+.container {
+  margin: 0 5%;
+}

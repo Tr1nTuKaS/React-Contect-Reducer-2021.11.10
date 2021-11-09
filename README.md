@@ -14,6 +14,8 @@
 ### Components
 
 1. Components/Navbar
+2. section/blog
+   2.1 blogItem - > links to SingeBlogPage
 
 ### Setup
 

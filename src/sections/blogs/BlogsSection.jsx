@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import BlogItem from '../../components/blog-item/BlogItem';
+import Button from '../../components/ui/button/Button';
 
 const blogDataArr = [
   {
@@ -78,13 +79,14 @@ function BlogsSection() {
   async function getPosts() {
     const resp = await fetch('/db/posts.json');
     const data = await resp.json();
-    console.log(data);
+    // console.log(data);
     setPosts(data);
   }
 
   return (
     <section className='container'>
       <h2>Our blogs</h2>
+      <Button>btnBlogs</Button>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
         aspernatur repudiandae nobis earum voluptate id adipisci nostrum

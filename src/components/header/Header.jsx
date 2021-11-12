@@ -1,7 +1,15 @@
 import css from './Header.module.css';
 import { Link } from 'react-router-dom';
+import { useAuthCtx } from '../../store/AuthContext';
 
 function Header() {
+  const { user, logout, isUserLoggedIn } = useAuthCtx();
+
+  const sendLogout = (e) => {
+    e.preventDefault();
+    logout();
+  };
+
   return (
     <header className={css.header}>
       <div className='container'>
@@ -20,9 +28,29 @@ function Header() {
           </Link>
         </nav>
         <nav>
-          <Link className={css['nav-link']} to='/login'>
-            Login/Register
-          </Link>
+          {!isUserLoggedIn && (
+            <Link className={css['nav-link']} to='/login'>
+              Login/Register
+            </Link>
+          )}
+          {isUserLoggedIn && (
+            <>
+              <Link
+                onClick={(e) => e.preventDefault()}
+                className={css['nav-link']}
+                to='/sdsds'
+              >
+                User: {user}
+              </Link>
+              <Link
+                onClick={sendLogout}
+                className={css['nav-link']}
+                to='/logout'
+              >
+                Logout
+              </Link>
+            </>
+          )}
         </nav>
       </div>
     </header>
